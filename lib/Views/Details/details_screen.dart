@@ -50,10 +50,10 @@ class _MedicineDetailsScreenState extends State<MedicineDetailsScreen> {
             SizedBox(
               height: 7.h,
             ),
-            ExtendedSection(
-              medicine: widget.medicine,
+            Expanded(
+              child: ExtendedSection(medicine: widget.medicine),
             ),
-            const Spacer(),
+
             DeleteButton(
               medicine: widget.medicine,
             )
